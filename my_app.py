@@ -7,7 +7,6 @@ from PIL import Image
 
 
 model = pickle.load(open("rf_model.pkl", "rb"))
-df = pd.read_csv("creditcard.csv")
 image = Image.open('img 7.jpg')
 html_temp = """
 <div style="background-color:Blue;padding:10px">
