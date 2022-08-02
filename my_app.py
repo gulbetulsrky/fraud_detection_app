@@ -20,15 +20,15 @@ st.markdown("#### <center>Use the sidebar to enter required informations.</cente
 st.markdown('***')
 
 # columns = [‘v14’, ‘v17’, ‘v12’, ‘v10’, ‘v11’, ‘v4’, ‘v3’, ‘v7’, ‘v16’]
-v3 = st.sidebar.slider(label="v3", min_value=-49, max_value=10, step=0.01)
-v4 = st.sidebar.slider(label="v4", min_value=-6, max_value=17, step=0.01)
-v7 = st.sidebar.slider(label="v7", min_value=-44, max_value=121, step=0.01)
-v10 = st.sidebar.slider(label="v10", min_value=-25, max_value=24, step=0.01)
-v11 = st.sidebar.slider("v11", min_value=-5, max_value=13, step=0.01)
-v12 = st.sidebar.slider("v12", min_value=-19, max_value=8, step=0.01)
-v14 = st.sidebar.slider("v14", min_value=-20, max_value=11, step=0.01)
-v16 = st.sidebar.slider("v16", min_value=-15, max_value=18, step=0.01)
-v17 = st.sidebar.slider("v17", min_value=-26, max_value=10, step=0.01)
+v3 = st.sidebar.slider(label="v3", min_value=-49.00, max_value=10.00, step=0.01)
+v4 = st.sidebar.slider(label="v4", min_value=-6.00, max_value=17.00, step=0.01)
+v7 = st.sidebar.slider(label="v7", min_value=-44.00, max_value=121.00, step=0.01)
+v10 = st.sidebar.slider(label="v10", min_value=-25.00, max_value=24.00, step=0.01)
+v11 = st.sidebar.slider("v11", min_value=-5.00, max_value=13.00, step=0.01)
+v12 = st.sidebar.slider("v12", min_value=-19.00, max_value=8.00, step=0.01)
+v14 = st.sidebar.slider("v14", min_value=-20.00, max_value=11.00, step=0.01)
+v16 = st.sidebar.slider("v16", min_value=-15.00, max_value=18.00, step=0.01)
+v17 = st.sidebar.slider("v17", min_value=-26.00, max_value=10.00, step=0.01)
 
 # fraud = pd.DataFrame({‘v14’:v14, ‘v17’:v17, ‘v12’:v12, ‘v10’:v10, ‘v11’:v11, ‘v4’:v4, ‘v3’:v3, ‘v7’:v7, ‘v16’:v16})
 
