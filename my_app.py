@@ -19,12 +19,16 @@ st.markdown('# <center><span style="color:#286608">Fraud Detection</span></cente
 st.markdown("#### <center>Use the sidebar to enter required informations.</center>",unsafe_allow_html=True)
 st.markdown('***')
 
-
-# satisfaction_level = st.sidebar.slider(label="Satisfaction Level", min_value=0.0, max_value=1.0, step=0.01)
-# last_evaluation = st.sidebar.slider(label="Last Evaluation", min_value=0.0, max_value=1.0, step=0.01)
-# number_project = st.sidebar.slider(label="Number Of Project", min_value=0, max_value=10, step=1)
-# average_montly_hours = st.sidebar.slider(label="Average Monthly Hours", min_value=0, max_value=350, step=10)
-# time_spend_company = st.sidebar.slider("Time Spend in Company", min_value=1, max_value=10, step=1)
+# columns = [‘v14’, ‘v17’, ‘v12’, ‘v10’, ‘v11’, ‘v4’, ‘v3’, ‘v7’, ‘v16’]
+v3 = st.sidebar.slider(label="v3", min_value=-48.326, max_value=9.383, step=0.01)
+v4 = st.sidebar.slider(label="v4", min_value=-5.683, max_value=16.875, step=0.01)
+v7 = st.sidebar.slider(label="v7", min_value=-43.557, max_value=120.589, step=1)
+v10 = st.sidebar.slider(label="v10", min_value=-24.588, max_value=23.745, step=10)
+v11 = st.sidebar.slider("v11", min_value=1, max_value=10, step=1)
+v12 = st.sidebar.slider("v12", min_value=1, max_value=10, step=1)
+v14 = st.sidebar.slider("v14", min_value=1, max_value=10, step=1)
+v16 = st.sidebar.slider("v16", min_value=1, max_value=10, step=1)
+v17 = st.sidebar.slider("v17", min_value=1, max_value=10, step=1)
 
 # fraud = pd.DataFrame({"satisfaction_level" : [satisfaction_level],
                    # "last_evaluation" : [last_evaluation],
