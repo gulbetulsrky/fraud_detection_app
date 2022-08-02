@@ -28,7 +28,7 @@ v14 = st.sidebar.slider("v14", min_value=-20.00, max_value=11.00, step=0.01)
 v16 = st.sidebar.slider("v16", min_value=-15.00, max_value=18.00, step=0.01)
 v17 = st.sidebar.slider("v17", min_value=-26.00, max_value=10.00, step=0.01)
 
-fraud = pd.DataFrame({"v14":[v14], "v17":[v17], "v12":[v12], "v10":[v10], "v4":[v4], "v3":[v3], "v1":[v16]})
+fraud = pd.DataFrame({"v3":[v3], "v4":[v4], "v10":[v10], "v12":[v12], "v14":[v14],  "v16":[v16], "v17":[v17]})
 
 hide_table_row_index = """
             <style>
