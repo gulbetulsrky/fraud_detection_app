@@ -20,22 +20,17 @@ st.markdown("#### <center>Use the sidebar to enter required informations.</cente
 st.markdown('***')
 
 # columns = [‘v14’, ‘v17’, ‘v12’, ‘v10’, ‘v11’, ‘v4’, ‘v3’, ‘v7’, ‘v16’]
-v3 = st.sidebar.slider(label="v3", min_value=-48.326, max_value=9.383, step=0.01)
-v4 = st.sidebar.slider(label="v4", min_value=-5.683, max_value=16.875, step=0.01)
-v7 = st.sidebar.slider(label="v7", min_value=-43.557, max_value=120.589, step=1)
-v10 = st.sidebar.slider(label="v10", min_value=-24.588, max_value=23.745, step=10)
-v11 = st.sidebar.slider("v11", min_value=1, max_value=10, step=1)
-v12 = st.sidebar.slider("v12", min_value=1, max_value=10, step=1)
-v14 = st.sidebar.slider("v14", min_value=1, max_value=10, step=1)
-v16 = st.sidebar.slider("v16", min_value=1, max_value=10, step=1)
-v17 = st.sidebar.slider("v17", min_value=1, max_value=10, step=1)
+v3 = st.sidebar.slider(label="v3", min_value=-49, max_value=10, step=0.01)
+v4 = st.sidebar.slider(label="v4", min_value=-6, max_value=17, step=0.01)
+v7 = st.sidebar.slider(label="v7", min_value=-44, max_value=121, step=0.01)
+v10 = st.sidebar.slider(label="v10", min_value=-25, max_value=24, step=0.01)
+v11 = st.sidebar.slider("v11", min_value=-5, max_value=13, step=0.01)
+v12 = st.sidebar.slider("v12", min_value=-19, max_value=8, step=0.01)
+v14 = st.sidebar.slider("v14", min_value=-20, max_value=11, step=0.01)
+v16 = st.sidebar.slider("v16", min_value=-15, max_value=18, step=0.01)
+v17 = st.sidebar.slider("v17", min_value=-26, max_value=10, step=0.01)
 
-# fraud = pd.DataFrame({"satisfaction_level" : [satisfaction_level],
-                   # "last_evaluation" : [last_evaluation],
-                    #"number_project" : [number_project],
-                    #"average_montly_hours" : [average_montly_hours],
-                    #"time_spend_company" : [time_spend_company],
-                    #})
+# fraud = pd.DataFrame({‘v14’:v14, ‘v17’:v17, ‘v12’:v12, ‘v10’:v10, ‘v11’:v11, ‘v4’:v4, ‘v3’:v3, ‘v7’:v7, ‘v16’:v16})
 
 hide_table_row_index = """
             <style>
@@ -45,15 +40,10 @@ hide_table_row_index = """
             """        
 st.markdown(hide_table_row_index, unsafe_allow_html=True)   
 
-#showdf = fraud.rename(columns={'satisfaction_level': 'Satisfaction Level',
- #                            'last_evaluation': 'Last Evaluation',
-  #                           'number_project': 'Number Of Project',
-   #                          'average_montly_hours': 'Average Monthly Hours',
-    #                         'time_spend_company': 'Time Spend in Company'})
 st.markdown("#### <center>Transaction Information</center>",unsafe_allow_html=True)
-#st.table(fraud)
+st.table(fraud)
 
-#prediction = model.predict(fraud)
+prediction = model.predict(fraud)
 
 
 st.subheader('Click PREDICT if configuration is OK')
