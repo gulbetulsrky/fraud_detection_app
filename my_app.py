@@ -52,6 +52,12 @@ if st.button('PREDICT'):
 	if prediction[0]==0:
 		st.success(prediction[0])
 		st.success(f'It is a non fraudulent transaction.')
+		st.markdown("![Alt Text](https://media4.giphy.com/media/hgjNPEmAmpCMM/giphy.gif?cid=ecf05e47avsfwy34clng4aqdpx53bg2a81m6x7xboop6sa3g&rid=giphy.gif&ct=g)")
+
+st.markdown(
+    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+    unsafe_allow_html=True,
+)
 	elif prediction[0]==1:
 		st.warning(prediction[0])
 		st.warning(f'It is a fraudulent transaction.')
