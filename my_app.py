@@ -19,7 +19,7 @@ st.markdown('# <center><span style="color:#286608">Fraud Detection</span></cente
 st.markdown("#### <center>Use the sidebar to enter required informations.</center>",unsafe_allow_html=True)
 st.markdown('***')
 
-# columns = [‘v14’, ‘v17’, ‘v12’, ‘v10’, ‘v11’, ‘v4’, ‘v3’, ‘v7’, ‘v16’]
+# columns = ["v14", ‘v17’, ‘v12’, ‘v10’, ‘v11’, ‘v4’, ‘v3’, ‘v7’, ‘v16’]
 v3 = st.sidebar.slider(label="v3", min_value=-49.00, max_value=10.00, step=0.01)
 v4 = st.sidebar.slider(label="v4", min_value=-6.00, max_value=17.00, step=0.01)
 v7 = st.sidebar.slider(label="v7", min_value=-44.00, max_value=121.00, step=0.01)
@@ -30,7 +30,7 @@ v14 = st.sidebar.slider("v14", min_value=-20.00, max_value=11.00, step=0.01)
 v16 = st.sidebar.slider("v16", min_value=-15.00, max_value=18.00, step=0.01)
 v17 = st.sidebar.slider("v17", min_value=-26.00, max_value=10.00, step=0.01)
 
-fraud = pd.DataFrame({‘v14’:v14, ‘v17’:v17, ‘v12’:v12, ‘v10’:v10, ‘v11’:v11, ‘v4’:v4, ‘v3’:v3, ‘v7’:v7, ‘v16’:v16})
+fraud = pd.DataFrame({"v14":v14, "v17":v17, "v12":v12, "v10":v10, "v11":v11, "v4":v4, "v3":v3, "v7":v7, "v1":v16})
 
 hide_table_row_index = """
             <style>
