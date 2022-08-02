@@ -54,7 +54,7 @@ if st.button('PREDICT'):
 		
 
 	elif prediction[0]==1:
-		st.markdown("![Alt Text](https://media4.giphy.com/media/hgjNPEmAmpCMM/giphy.gif?cid=ecf05e47avsfwy34clng4aqdpx53bg2a81m6x7xboop6sa3g&rid=giphy.gif&ct=g)")
+		st.markdown("![Alt Text](https://blog.gilded.finance/content/images/2020/11/BTC-Accounting.gif)")
 		st.audio("580114__annyew__danger-alarm.wav", format="audio/wav", start_time=0)
 		st.warning(prediction[0])
 		st.warning(f'It is a fraudulent transaction.')
