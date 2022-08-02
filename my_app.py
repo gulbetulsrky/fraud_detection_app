@@ -2,12 +2,11 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-import pickle
+import joblib
 from PIL import Image
 
 
-
-model = pickle.load(open("rf_model.pkl", "rb"))
+model = joblib.load(open("rf_model.pkl", "rb"))
 image = Image.open('img 7.jpg')
 html_temp = """
 <div style="background-color:Blue;padding:10px">
