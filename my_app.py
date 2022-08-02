@@ -54,7 +54,7 @@ if st.button('PREDICT'):
 		
 
 	elif prediction[0]==1:
-		st.markdown("![Alt Text](https://i2.wp.com/www.aplos.com/academy/wp-content/uploads/sites/5/2018/02/nonprofit-fraud.gif?resize=192%2C192&ssl=1)")
+		st.markdown("![Alt Text](https://c.tenor.com/pNps_Dc7DcAAAAAC/there-is-no-dollar-dollar.gif)")
 		st.audio("580114__annyew__danger-alarm.wav", format="audio/wav", start_time=0)
 		st.warning(prediction[0])
 		st.warning(f'It is a fraudulent transaction.')
