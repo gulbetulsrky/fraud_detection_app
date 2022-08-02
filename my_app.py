@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
 import pickle
 from PIL import Image
 
