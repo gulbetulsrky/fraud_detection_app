@@ -50,14 +50,16 @@ st.subheader('Click PREDICT if configuration is OK')
 
 if st.button('PREDICT'):
 	if prediction[0]==0:
+		st.markdown("![Alt Text](https://i.pinimg.com/originals/1a/3b/d2/1a3bd2b9bb77b8297ee5a1a693ae9d29.gif)")
 		st.success(prediction[0])
 		st.success(f'It is a non fraudulent transaction.')
 		
 
 	elif prediction[0]==1:
+		st.markdown("![Alt Text](https://media4.giphy.com/media/hgjNPEmAmpCMM/giphy.gif?cid=ecf05e47avsfwy34clng4aqdpx53bg2a81m6x7xboop6sa3g&rid=giphy.gif&ct=g)")
 		st.warning(prediction[0])
 		st.warning(f'It is a fraudulent transaction.')
-		st.markdown("![Alt Text](https://media4.giphy.com/media/hgjNPEmAmpCMM/giphy.gif?cid=ecf05e47avsfwy34clng4aqdpx53bg2a81m6x7xboop6sa3g&rid=giphy.gif&ct=g)")
+		
 
 hide_streamlit_style = """
             <style>
