@@ -16,7 +16,7 @@ st.set_page_config(page_title='Fraud Detection', page_icon='👩‍💻')
 st.image(image)
 st.markdown('***')
 st.markdown('# <center><span style="color:#286608">Fraud Detection</span></center>',unsafe_allow_html=True )
-st.markdown('# <center><span style="color:#286608">Group LastThreeBrainCells</span></center>',unsafe_allow_html=True )
+st.markdown('### <center><span style="color:#286608">Group LastThreeBrainCells</span></center>',unsafe_allow_html=True )
 st.markdown("#### <center>Use the sidebar to enter required informations.</center>",unsafe_allow_html=True)
 st.markdown('***')
 
