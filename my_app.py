@@ -20,7 +20,7 @@ st.markdown("#### <center>Use the sidebar to enter required informations.</cente
 st.markdown('***')
 
 # columns = ["v14", ‘v17’, ‘v12’, ‘v10’, ‘v11’, ‘v4’, ‘v3’, ‘v7’, ‘v16’]
-v1 = st.sidebar.slider(label="v1", min_value=-49.00, max_value=10.00, step=0.01)
+v1 = st.sidebar.slider(label="v1", min_value=-57.00, max_value=3.00, step=0.01)
 v4 = st.sidebar.slider(label="v4", min_value=-6.00, max_value=17.00, step=0.01)
 v10 = st.sidebar.slider(label="v10", min_value=-25.00, max_value=24.00, step=0.01)
 v12 = st.sidebar.slider("v12", min_value=-19.00, max_value=8.00, step=0.01)
